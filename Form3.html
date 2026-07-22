@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">           <!-- character encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>registration form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>     <!--groups related form controls inside a bordered box // makes forms more organized-->
+        <legend align="center">registration form</legend>     <!--adds a title to the fieldset -->
+        <lable for="">first name:</lable>                     <!--displays text describing an inputfield-->
+        <input type="text" pattern="[a-zA-Z]{3,}" placeholder="enter first name"> <br> <br>       <!----->
+        <lable for="">last name:</lable>
+        <input type="text" pattern="[a-zA-Z]{3,}" placeholder="enter last name"> <br> <br>
+        <lable for="">email:</lable>
+        <input type="email" placeholder="enter email address"> <br> <br>
+        <lable for="">password:</lable>
+        <input type="password" > <br> <br>
+        <lable for="">ph no:</lable>
+        <input type="tel" pattern="[0-9]{10}"> <br> <br>
+        <lable for="">dob:</lable>
+        <input type="date"> <br> <br>
+        <lable for="">gender:</lable>
+        <label for="">male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="">female</label>
+        <input type="radio" name="gender" value="female">
+        <label for="">others</label>
+        <input type="radio" name="gender" value="others"><br> <br>
+        <label for="">age:</label>
+        <input type="number" min="18" max="32"><br> <br>
+        <lable for="">preference:</lable>
+        <lable for="">acrylic-painting:</lable>
+        <input type="checkbox" name="painting" value="acrylic-painting">
+        <lable for="">gender:</lable>
+        <label for="">oil-painting</label>
+        <input type="checkbox" name="painting" value="oil-painting">
+        <label for="">watercolor-painting</label>
+        <input type="checkbox" name="painting" value="watercolor-painting"><br><br>
+        <lable for="">State:</lable>
+        <select name="state">
+            <option value="andhra">andhra</option>
+            <option value="odisha">odisha</option>
+            <option value="bihar">bihar</option>
+            <option value="telengana">telengana</option>
+            <option value="karnataka">karnataka</option>
+            <option value="goa">goa</option>
+
+        </select><br> <br>
+        <lable for="">food items:</lable>
+        <select name="fooditems" id="">
+            <optgroup label="veg-items">
+                <option value="">paneer curry</option>
+                <option value="">kobi curry</option>
+                <option value="">mushroom curry</option>
+                <option value="">mixed curry</option>
+                <option value="">naan </option>
+            </optgroup>
+            <optgroup label="nonveg-items">
+                <option value="">paneer curry</option>
+                <option value="">kobi curry</option>
+                <option value="">mushroom curry</option>
+                <option value="">mixed curry</option>
+                <option value="">naan </option>
+            </optgroup>
+
+
+        </select><br> <br>
+        <label for="">Bio:</label>
+        <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+        </fieldset>
+
+    </form>
+</body>
+</html>
