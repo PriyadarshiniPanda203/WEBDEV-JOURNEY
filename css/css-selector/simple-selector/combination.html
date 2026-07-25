@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         decendant selector
+        section h1{
+            background-color: aqua;
+           }
+        
+        section > h1{
+            background-color:aqua;
+
+        }
+
+        section div h1{
+                  background-color:blue ;
+        }
+
+        section + h1{
+            background-color: red;
+
+
+        }
+
+        section ~ h1{
+background-color: orange;
+        }
+ </style>
+</head>
+<body>
+    <section>
+      <h1>html</h1>
+      <h1>css</h1>
+        <div>
+        <h1>Tailwindcss</h1>
+        <h1>Bootstrap</h1>
+         </div>
+         <h1>javascript</h1>
+    </section>
+    <h1>Java</h1>
+    <h1>Python</h1>
+    <h1>sql</h1>
+</body>
+</html>
